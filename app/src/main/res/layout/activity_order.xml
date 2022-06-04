@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FE130"
+    android:orientation="vertical"
+
+    tools:context=".OrderActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#69BF72">
+
+        <ImageView
+            android:id="@+id/imgview_order_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@drawable/backarrow"></ImageView>
+
+        <TextView
+            android:id="@+id/textview_order_namefoodmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ĐẶT HÀNG"
+            android:textStyle="bold"
+            android:textColor="#FDF39D"
+            android:fontFamily="@font/americana"
+            android:textSize="25dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_order_inforuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            >
+        <fragment
+            android:id="@+id/map_order"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="78dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"></fragment>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/Red"
+                android:clickable="true"
+                android:gravity="center"
+                android:id="@+id/txtview_order_checkdirection"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/textview_order_inforuser"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Đặt cho:"
+                android:textColor="@color/black"
+                android:textSize="20dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/textview_order_mapdistance"
+            android:text="6km"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            >
+        </TextView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textview_order_suainfor"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="serif"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="sửa"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_order_timearrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="horizontal"/>
+
+    <ListView
+        android:id="@+id/listview_order_foodlist"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"></ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textview_order_sophan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Tổng x phần"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+        <!--        Chữ X là số lượng món, cần được in đậm-->
+
+        <TextView
+            android:id="@+id/textview_order_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:text="210000:D"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:text="Phí giao hang:"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/textview_order_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="70dp"
+            android:text="4.9 km?"
+            android:textColor="@color/Red"
+            android:textSize="20dp"></TextView>
+
+        <ImageView
+            android:id="@+id/imgview_order_thacmacgiaohang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="70dp"
+            android:clickable="true"
+            android:src="@drawable/thacmacsymbol"></ImageView>
+
+        <TextView
+            android:id="@+id/textview_order_phigiaohang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="5dp"
+            android:text="36000d"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tổng cộng"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textview_order_newprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="oldpirce+phigiaohang"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/editsymbolgray"
+            android:text="Ghi chu"
+            android:id="@+id/button_order_ghichu"
+            android:textColor="@color/black">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_order_khuyenmai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/tagkhuyenmai"
+            android:text="Khuyen mai"
+            android:textColor="@color/Green">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_order_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/cancel"
+            android:text="No Invoice"
+            android:textColor="@color/Red">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_order_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_vertical"
+        android:background="@color/DarkRed"
+        android:orientation="horizontal"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/textview_order_totalsoluong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="1 Phần"></TextView>
+
+        <TextView
+            android:id="@+id/textview_order_datcho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/gorightarrow"
+            android:gravity="center"
+            android:text="ĐẶT CHỖ"
+            android:textColor="@color/Aqua"
+            android:textStyle="bold"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/textview_order_totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="236000:D"
+            android:gravity="end"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/Yellow"
+            ></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

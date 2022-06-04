@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroundcart"></ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_giohang_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F67722"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgview_giohang_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/backarrow"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/americana"
+            android:text="GIỎ HÀNG CỦA BẠN"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="665dp"
+        android:layout_below="@+id/layout_giohang_header"
+        android:layout_above="@+id/layout_giohang_footer"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape"
+        android:clipToOutline="true">
+
+        <ListView
+            android:id="@+id/listview_giohang_hanghoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:clickable="true"></ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_giohang_footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#63E810"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="TỔNG TIỀN"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textview_giohang_tongtien"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="200000"
+
+            android:textColor="@color/Red"
+            android:textSize="20dp"></TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_giohang_thanhtoan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/Red"
+            android:drawableRight="@drawable/gorightarrow"
+            android:text="Thanh Toán"
+            android:textColor="@color/Aqua"
+            android:textSize="15dp"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

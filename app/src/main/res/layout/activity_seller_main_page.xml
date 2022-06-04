@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SellerMainPage"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/LightPink">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/cappo"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edittext_nguoibantrangchinh_search"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/White"
+                android:hint=" Bạn cần gì? Cappo sẽ giúp bạn!"
+                android:fontFamily="@font/facebook"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                ></EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_nguoibantrangchinh_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtview_nguoibantrangchinh_themmonan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#0D1313"
+            android:clickable="true"
+            android:fontFamily="@font/aptima"
+            android:gravity="center"
+            android:text="THÊM MÓN ĂN"
+            android:textColor="@color/cappo"
+            android:textSize="35dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundseller"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="50dp"
+            >
+        <ListView
+            android:id="@+id/listview_nguoibantrangchinh_sanpham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"></ListView>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/button_nguoibantrangchinh_bookmark"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="32dp"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@android:color/transparent"-->
+        <!--            android:drawableTop="@drawable/bookmarkicon"></androidx.appcompat.widget.AppCompatButton>-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_nguoibantrangchinh_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cappo"
+            android:drawableTop="@drawable/homeicon"
+
+            ></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:drawableTop="@drawable/noteicon"
+            android:id="@+id/button_nguoibantrangchinh_donhang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/cappo"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_nguoibantrangchinh_thongbao"
+            android:drawableTop="@drawable/thongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cappo"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_nguoibantrangchinh_canhan"
+            android:drawableTop="@drawable/canhan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/cappo"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:text="<"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        ></Button>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#64E16A">
+
+        <ImageView
+            android:id="@+id/imgview_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:src="@drawable/backarrow"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Đăng Nhập và Đăng Ký"
+            android:textColor="#000E0B"
+            android:textSize="35dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/blankspace"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etext_login_usn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Tên tài khoản"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLength="30"
+            android:textSize="25dp"></EditText>
+
+        <EditText
+            android:id="@+id/etext_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:textSize="25dp"></EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_white"
+            android:clickable="true"
+            android:hint="ĐĂNG NHẬP"
+            android:textColorHint="@color/Black"></androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Chưa có tài khoản? Đăng ký:"
+            android:textColor="#1A37C6"
+            android:textSize="20dp"></TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_white"
+            android:clickable="true"
+            android:hint="ĐĂNG KÝ"
+            android:textColorHint="@color/Black"></androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Yêu là phải nói còn đói là Cappo lo"
+            android:textColor="@color/Red"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"></TextView>
+    </LinearLayout>
+</RelativeLayout>

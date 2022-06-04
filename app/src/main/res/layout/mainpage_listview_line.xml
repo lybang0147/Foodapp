@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:id="@+id/imgview_mainpageline_firstimg"
+            android:src="@drawable/logo_main"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:clickable="true"
+         ></ImageView>
+
+        <TextView
+            android:id="@+id/txtview_mainpageline_firstprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#DA2525"
+            android:textStyle="italic"
+            android:text="275000VND"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtview_mainpageline_firstfoodname"
+            android:text="Chuối chiên"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="18dp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtview_mainpageline_firstresname"
+            android:text="Cappo Store"
+            android:textColor="#000000"
+            android:textSize="16dp"></TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:id="@+id/imgview_mainpageline_secondimg"
+            android:src="@drawable/logo_main"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/txtview_mainpageline_secondprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#DA2525"
+            android:textStyle="italic"
+            android:text="275000VND"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtview_mainpageline_secondfoodname"
+            android:text="Chuối chiên"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="18dp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtview_mainpageline_secondresname"
+            android:text="Cappo Store"
+            android:textColor="#000000"
+            android:textSize="16dp"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

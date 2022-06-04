@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateUserInfo"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#313333">
+
+        <ImageView
+            android:id="@+id/imgview_updateuserinfo_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@drawable/backarrow"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/demiankt"
+            android:gravity="center"
+            android:text="SỬA THÔNG TIN CÁ NHÂN"
+            android:textColor="@color/AliceBlue"
+            android:textSize="30dp"></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/alexander"
+        android:text="ẢNH ĐẠI DIỆN"
+        android:textColor="@color/black"
+        android:textSize="30dp"></TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgview_updateuserinfo_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/swallow"
+        app:civ_border_color="@color/Blue"
+        app:civ_border_overlay="true"
+        app:civ_border_width="5dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/alexander"
+            android:text="TÊN CỦA BẠN"
+            android:textColor="@color/black"
+            android:textSize="30dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backgroundtext">
+
+            <EditText
+                android:id="@+id/edittxt_updateuserinfo_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/alexander"
+                android:hint="Họ và Tên"
+                android:textAlignment="center"
+                android:textColor="@color/Teal"
+                android:textSize="30dp"></EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alexander"
+            android:text="ĐỊA CHỈ CỦA BẠN"
+            android:textColor="@color/black"
+            android:textSize="30dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/backgroundtext">
+
+            <EditText
+                android:id="@+id/edittxt_updateuserinfo_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:lines="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/alexander"
+                android:text="Địa chỉ "
+                android:textColor="@color/black"
+                android:textSize="20dp"></EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="Thêm địa chỉ"
+                    android:background="@color/cappo"
+                    android:id="@+id/btn_updateuserinfo_address"
+                    ></androidx.appcompat.widget.AppCompatButton>
+                <fragment
+                    android:id="@+id/map_updateuserinfo"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="150dp"></fragment>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_updateuserinfo_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/cappo"
+        android:fontFamily="@font/swisscondensed"
+        android:text="HOÀN TẤT"
+        android:textAlignment="center"
+        android:textSize="25dp"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

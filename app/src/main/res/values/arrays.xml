@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items" >
+        <item>Bao loi</item>
+        <item>Bat thong bao</item>
+        <item>Donate ung ho</item>
+</string-array>
+</resources>

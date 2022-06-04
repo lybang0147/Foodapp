@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2891EC"
+    tools:context=".Person">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cappo">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:id="@+id/imgview_person_back"
+            android:src="@drawable/backarrow"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/americana"
+            android:text="Tài Khoản"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/Black"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_person_personname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/personinformation"
+            android:text="Tên người dùng"
+            android:fontFamily="@font/aristote"
+            android:textSize="25dp"></Button>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_person_payment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/cappo"
+            android:drawableLeft="@drawable/creditcard"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="Thanh Toán"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_person_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/cappo"
+            android:drawableLeft="@drawable/restaurant"
+            android:drawableRight="@drawable/rightarrow"
+            android:text="Nhà Hàng Của Bạn"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_person_logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@color/cappo"
+            android:drawableLeft="@drawable/exit"
+            android:drawableRight="@drawable/close"
+            android:text="Đăng xuất"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/button_trangchinh_bookmark"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="32dp"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@android:color/transparent"-->
+        <!--            android:drawableTop="@drawable/bookmarkicon"></androidx.appcompat.widget.AppCompatButton>-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_trangchinh_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cappo"
+            android:drawableTop="@drawable/homeicon"
+
+            ></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:drawableTop="@drawable/noteicon"
+            android:id="@+id/button_trangchinh_donhang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/cappo"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_trangchinh_thongbao"
+            android:drawableTop="@drawable/thongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cappo"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_trangchinh_canhan"
+            android:drawableTop="@drawable/canhan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/cappo"
+            android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+</LinearLayout>

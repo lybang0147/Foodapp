@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable-v24/backgroundtext.xml" value="0.2255" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable-v24/round_text_remove_item.xml" value="0.2255" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable/addsymbol.xml" value="0.2255" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable/backarrow.xml" value="0.124" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable/button_white.xml" value="0.124" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/drawable/shape.xml" value="0.2255" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_add_food.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_cart.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_edit_food.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_explore_map.xml" value="0.12099187687045745" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_main_page.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_maps.xml" value="0.18359020852221214" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_maps_direction.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_mon_an.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_order.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_order_detail.xml" value="0.176" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_orderlist.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_person.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_seller_main_page.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_seller_register.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_update_user_info.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/activity_user_info.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/cart_listview_line.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/foodmainpage_listview_line.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/loginactivity.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/mainpage_listview_line.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/order_listview_line.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/orderlist_listview_line.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/sellermainpage_listview_line.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/test.xml" value="0.19709277469003847" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/layout/tse.xml" value="0.20863616930312098" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
+        <entry key="..\:/AndroidStudioProjects/Nhom10Foody/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.124" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/drawable-v24/contactsymbol.xml" value="0.1125" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/drawable/backgroundpink.xml" value="0.1" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/drawable/backgroundseller.xml" value="0.1" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_add_food.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_cart.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_edit_food.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_main.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_main_page.xml" value="0.33" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_maps.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_mon_an.xml" value="0.21" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_order.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_order_detail.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_orderlist.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_person.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_seller_main_page.xml" value="0.25" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/activity_seller_register.xml" value="0.1" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/cart_listview_line.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/contact_spinner_row_nothing_selected.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/foodmainpage_listview_line.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/fragment_first.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/fragment_second.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/mainpage_listview_line.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/order_listview_line.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/orderlist_listview_line.xml" value="0.1675929884566054" />
+        <entry key="..\:/HocTap/LapTrinhDiDong/Nhom10Foody/app/src/main/res/layout/sellermainpage_listview_line.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

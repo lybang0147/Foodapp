@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MonAnActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Red">
+
+            <ImageView
+                android:id="@+id/button_monan_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/backarrow"></ImageView>
+
+            <TextView
+                android:id="@+id/textview_monan_tennhahangupper"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Database namefood"
+                android:textColor="@color/White"
+                android:textSize="20dp"></TextView>
+
+            <Spinner
+                android:id="@+id/button_monan_dropdown"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="118dp"
+                android:background="@drawable/dropdownbutton"
+                android:spinnerMode="dropdown"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_monan_taianh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/camera"
+                android:text="Tải ảnh"
+                android:textColor="@color/White"
+                android:textSize="11dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/button_monan_checkin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/location"
+                android:text="Check-in"
+                android:textColor="@color/White"
+                android:textSize="11dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/button_monan_binhluan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/comment"
+                android:text="Bình luận"
+                android:textColor="@color/White"
+                android:textSize="11dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/button_monan_chiase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/share"
+                android:text="Chia sẻ"
+                android:textColor="@color/White"
+                android:textSize="11dp"></Button>
+        </LinearLayout>
+        <!--    <ScrollView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="fill_parent"-->
+        <!--        >-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="vertical">-->
+        <!--        <Button-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            android:drawableTop="@drawable/share"-->
+        <!--            android:text="Chia sẻ"-->
+        <!--            android:textColor="@color/Black"-->
+        <!--            android:layout_marginTop="-10dp"-->
+        <!--            android:textSize="11dp"-->
+        <!--            android:background="@android:color/transparent"></Button>-->
+        <!--     -->
+
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LightPink"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgview_monan_mainimg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/swallow">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textview_monan_tennhahang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Purple"
+                android:fontFamily="@font/alexander"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="Data Name Food"
+                android:textColor="@color/white"
+                android:textSize="40dp"></TextView>
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:orientation="horizontal">-->
+            <!--&lt;!&ndash; Yêu cầu phải có 2 line text, với 1 line là count của nội dung đó-->
+            <!--(số nội dung), và thứ 2 là dòng đó-->
+            <!--&ndash;&gt;-->
+
+            <!--                <androidx.appcompat.widget.AppCompatButton-->
+            <!--                    android:id="@+id/button_monan_showbinhluan"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@android:color/transparent"-->
+            <!--                    android:text="25&#10;bình luận"-->
+            <!--                    ></androidx.appcompat.widget.AppCompatButton>-->
+
+            <!--                        <androidx.appcompat.widget.AppCompatButton-->
+            <!--                            android:id="@+id/button_monan_showhinhanh"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="match_parent"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:text="15&#10;Hinh anh"-->
+            <!--                            android:background="@android:color/transparent"-->
+            <!--                            ></androidx.appcompat.widget.AppCompatButton>-->
+            <!--                <androidx.appcompat.widget.AppCompatButton-->
+            <!--                    android:id="@+id/button_monan_showcheckin"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@+id/button_trangchinh_home"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="2&#10;Check-in"-->
+            <!--                    android:background="@android:color/transparent"-->
+            <!--                    ></androidx.appcompat.widget.AppCompatButton>-->
+
+            <!--                <androidx.appcompat.widget.AppCompatButton-->
+            <!--                    android:id="@+id/button_monan_showluulai"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_toRightOf="@+id/button_trangchinh_donhang"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="100&#10;luu lai"-->
+            <!--                    android:background="@android:color/transparent"-->
+            <!--                    ></androidx.appcompat.widget.AppCompatButton>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/spinner_monan_danhgia"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="1"-->
+
+            <!--                    ></Button>-->
+            <!--            </LinearLayout>-->
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="80dp"-->
+            <!--                >-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textview_monan_trangthai"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentStart="true"-->
+            <!--                    android:layout_alignParentTop="true"-->
+            <!--                    android:layout_marginStart="18dp"-->
+            <!--                    android:layout_marginTop="11dp"-->
+            <!--                    android:text="DATA STATUS HERE"-->
+            <!--                    android:textSize="20dp" />-->
+            <!--&lt;!&ndash;                    Yêu cầu về text color, khi mở cửa set texr màu xanh, khi&ndash;&gt;-->
+            <!--&lt;!&ndash;                chưa mở màu xám&ndash;&gt;-->
+
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textview_monan_timeopenclose"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentStart="true"-->
+            <!--                    android:layout_alignParentBottom="true"-->
+            <!--                    android:layout_marginStart="54dp"-->
+            <!--                    android:layout_marginBottom="15dp"-->
+            <!--                    android:text="time open - close"-->
+            <!--                    android:textColor="@color/black"></TextView>-->
+
+            <!--                <androidx.appcompat.widget.AppCompatButton-->
+            <!--                    android:id="@+id/button_monan_contact"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentEnd="true"-->
+            <!--                    android:layout_alignParentBottom="true"-->
+            <!--                    android:layout_marginEnd="17dp"-->
+            <!--                    android:layout_marginBottom="15dp"-->
+            <!--                    android:background="@color/LightGrey"-->
+            <!--                    android:drawableLeft="@drawable/contactsymbol"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:text="Liên hệ" />-->
+            <!--            </RelativeLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/swisscondensed"
+                android:gravity="center"
+                android:text="Món ăn của quán"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+
+            <ListView
+                android:id="@+id/listview_monan_datnhieu"
+                android:layout_width="match_parent"
+                android:layout_height="367dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:layout_weight="1"
+                android:background="@color/white"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

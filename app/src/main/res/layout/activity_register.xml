@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:text="<"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        ></Button>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgview_register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:src="@drawable/backarrow"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đăng Ký"
+            android:textColor="@color/HotPink"
+            android:textSize="40dp"
+            android:fontFamily="@font/americana"
+            android:textStyle="bold"></TextView>
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/blankspace"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etext_register_usn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên tài khoản"
+            android:maxLength="30"
+            android:layout_margin="10dp"
+            android:paddingBottom="15dp"
+            android:textSize="25dp"></EditText>
+
+        <EditText
+            android:id="@+id/etext_register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:paddingBottom="15dp"
+            android:textSize="25dp"></EditText>
+
+        <EditText
+            android:id="@+id/etext_register_retypepwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:paddingBottom="15dp"
+            android:textSize="25dp"></EditText>
+
+        <EditText
+            android:id="@+id/etext_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Số điện thoại"
+            android:maxLength="11"
+            android:paddingBottom="15dp"
+            android:textSize="25dp"></EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_white"
+            android:clickable="true"
+            android:hint="ĐĂNG KÝ"
+            android:textColorHint="@color/Black"></androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Yêu là phải nói còn đói là Cappo lo"
+            android:textColor="@color/Red"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

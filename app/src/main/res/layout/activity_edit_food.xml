@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC800"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundpink"
+        android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/Wheat"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imgview_editfood_editimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/swallow"
+            android:scaleType="fitXY"
+            ></ImageView>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="   Tên món ăn"
+        android:textSize="20dp"
+        android:id="@+id/edittxt_editfood_name"
+        android:background="@color/White"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="   Giá bán"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:id="@+id/edittxt_editfood_price"
+        android:background="@color/White"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="   Thành phần của món ăn"
+        android:textSize="20dp"
+        android:id="@+id/edittxt_editfood_detail"
+        android:background="@color/White"
+        ></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Lime"
+            android:text="SỬA"
+            android:textColor="@color/BlueViolet"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/btn_editfood_editbtn">
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Red"
+            android:layout_marginLeft="100dp"
+            android:text="Hủy"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:id="@+id/btn_editfood_cancel"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

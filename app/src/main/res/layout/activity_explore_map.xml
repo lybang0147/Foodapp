@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Explore_Map"
+    >
+
+    <fragment
+        android:id="@+id/map_explore"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+
+    <ImageView
+        android:id="@+id/imgview_exploremap_back"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginRight="-57dp"
+        android:background="@color/Red"
+        android:src="@drawable/backarrow"
+        android:clickable="true"/>
+    <EditText
+        android:id="@+id/edittxt_exploremap_search"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:hint="Enter address"
+        android:padding="16dp"></EditText>
+</RelativeLayout>
